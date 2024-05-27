@@ -16,9 +16,9 @@ export default function Home() {
     <main>
       <section className="bg-white">
       
-        <div className="bg-white spacer layerl">
+        <div className="bg-white">
           <header className="absolute inset-x-0 top-0 z-50">
-          <Navbar/>
+          {/* <Navbar/> */}
 
           </header>
           {/* <div className="absolute inset-0 select-none z-[-1] overflow-visible" style={{
@@ -159,7 +159,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Footer/>
+      {/* <Footer/> */}
     </main>
 
     

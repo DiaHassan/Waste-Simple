@@ -1,8 +1,12 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Card = ({ image, title, text, link }) => (
   <div className="bg-white rounded-3xl shadow-md overflow-hidden w-full sm:w-1/3 m-3">
     <img src={image} alt={title} className="w-full h-48 object-cover" />
+    {/* <div className="w-full h-48 object-cover" >
+      <Image src={image} alt={title} fill/>
+    </div> */}
     <div className="p-4 flex flex-col justify-between">
       <div>
         <h2 className="text-lg font-semibold">{title}</h2>
