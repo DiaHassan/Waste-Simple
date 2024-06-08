@@ -21,7 +21,7 @@ const Card = ({ image, title, text, link }) => (
 export default async function Blog(){
     const blogs = await getBlogs();
 
-    const sortedBlogs = blogs.sort((a,b) => new Date(b.date) - new Date(a.date));
+    // const sortedBlogs = blogs.sort((a,b) => new Date(b.date) - new Date(a.date));
     return(
         <section className="bg-white">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
@@ -33,7 +33,7 @@ export default async function Blog(){
                 </div>
             </div>
             <div className="mx-auto mt-12 max-w-lg sm:max-w-none sm:mx-auto sm:grid sm:grid-cols-1 sm:grid-rows-3 sm:gap-x-6 sm:gap-y-12 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4">
-                {sortedBlogs.map(blog => <Card key={blog.title} title={blog.title} text={blog.date} image={blog.image} />)}
+                {blogs.map(blog => <Card key={blog.title} title={blog.title} text={blog.date} image={blog.image} />)}
             </div>
         </div>
         </section>
