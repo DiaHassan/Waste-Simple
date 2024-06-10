@@ -6,11 +6,11 @@ const db = getFirestore();
 const getFromFs = async () => {
     const blogs = [];   
     const blg = await getDocs(collection(db, "blog"));
-    console.log("in")
+
     blg.forEach((doc) => {
-        blogs.push({title: doc.data().title, date: doc.data().date, image: doc.data().image})  
+        blogs.push({title: doc.data().title, date: doc.data().date, image: doc.data().image, text: doc.data().text, id: doc.data().id})  
     });
-    console.log(blogs)
+    // console.log(blogs)
     return blogs
 }
 
@@ -30,15 +30,12 @@ const blogs1 = [
 
 export const getBlogs = async () => {
     const blogs = await getFromFs();
-    console.log(blogs)
-    console.log(blogs1)
-    console.log(typeof blogs)
-    console.log(typeof blogs1)
+    // console.log(blogs)
     return blogs;
 }
 
 export const getBlog = async (slug) => {
     const blogs = await getFromFs();
-    console.log(blogs)
-    return blogs.find((blog) => blog.title === slug);
+    // console.log(blogs)
+    return blogs.find((blog) => blog.id === slug);
 }

@@ -29,7 +29,7 @@ export default function Footer(){
                         </div>
                     </div>
                     <hr className="my-4  border-[#727272] border-opacity-50 sm:mx-auto lg:my-6" />
-                    <span className="mb-8 block text-sm font-medium text-[#727272] text-center dark:text-[#727272] ">© 2024 WasteSimple. All Rights Reserved.</span>
+                    <span className="pb-8 block text-sm font-medium text-[#727272] text-center dark:text-[#727272] ">© 2024 WasteSimple. All Rights Reserved.</span>
                 </div>
             </footer>
         </div>

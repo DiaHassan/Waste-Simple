@@ -50,6 +50,8 @@ body {
 background-image: url('./bg.svg')
 }
 
+
+
 /* HTML: <div class="loader"></div> */
 .loader {
   width: 80px;
@@ -95,6 +97,15 @@ background-image: url('./bg.svg')
   background-position: center;
   background-size: cover;
 }  
+
+.spacer3 {
+  aspect-ratio: 960/400;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}  
+
 .layerl {
 background-image: url('./components/footer.svg')
 }
@@ -102,6 +113,29 @@ background-image: url('./components/footer.svg')
 background-image: url('./About/wp.svg')
 }
 
+.layer4 {
+  background-image: url('./About/wp2.svg')
+  }
+.layer3 {
+  background-image: url('./About/aboutt.svg')
+  }
+  
+
 .bg-gradient {
   background: radial-gradient(circle at 50% 100%, rgba(153, 255, 151, 1) 17%, rgba(255, 255, 255, 0.75) 60%);
+}
+
+#scroll-text {
+  display: inline-block;
+  animation: scroll-animation 10s linear infinite;
+  /* transform: rotate(-20deg);  */
+}
+
+@keyframes scroll-animation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
