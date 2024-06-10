@@ -7,15 +7,15 @@ const BlogPage = async ({ params: { slug } }) => {
     return <div>Blog not found</div>;
   }
   return (
-    <div className="bg-white w-full flex flex-col pt-10 px-20 items-center justify-center">
-      <div className="max-w-screen-lg w-full flex flex-col items-center justify-center">
-        <div className="w-full">
-          <img src={blog.image} alt={blog.title} className="w-full h-auto shadow-md" />
-        </div>
-        <div className="mt-6">
-          <h1 className="text-3xl font-bold mb-2">{blog.title}</h1>
-          <p className="text-sm text-gray-500 mb-4">{blog.date}</p>
-          <p className="text-lg text-gray-700">{blog.text}</p>
+    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-screen-lg mx-auto">
+        <div className="flex flex-col items-center">
+          <h1 className="text-4xl font-bold mb-4">{blog.title}</h1>
+          <p className="text-lg text-gray-500 mb-4">{blog.date}</p>
+          <img src={blog.image} alt={blog.title} className="w-full max-w-6xl h-auto mb-8" />
+          <div className="prose prose-xl max-w-none mb-8">
+            <p>{blog.text}</p>
+          </div>
         </div>
       </div>
     </div>

@@ -1,30 +1,37 @@
 import React from "react";
+import Link from "next/link"
 // import "../global.css";
 export default function Footer(){
     return(
-        <footer className="bg-[#3488cd] ">
-            <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-                <div className="sm:flex sm:items-center sm:justify-between">
-                    {/* <a href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                        <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
-                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-                    </a> */}
-                    <div></div>
-                    <ul className="flex flex-wrap items-center mb-6 text-sm font-large text-white sm:mb-0 dark:text-white">
-                        <li>
-                            <a href="#" className="hover:underline me-4 md:me-6">Buy Diamond Locks</a>
-                        </li>
-                        <li>
-                            <a href="#" className="hover:underline me-4 md:me-6">Get a new Account</a>
-                        </li>
-                        <li>
-                            <a href="#" className="hover:underline">Contact</a>
-                        </li>
-                    </ul>
+        <div>
+            <div className="spacer layerl"></div>
+            <footer className="bg-[#99FF97] ">
+                <div className="w-full max-w-screen-xl mx-auto px-10 md:py-6">
+                    <div className="flex flex-wrap justify-between sm:flex-row">
+                        <div className="sm:w-1/2">
+                            <a href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                                <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
+                                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-[#494949]">Flowbite</span>
+                            </a>
+                        </div>
+                        <div className="sm:w-1/2 text-left sm:text-left">
+                            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-[#494949] sm:mb-0 dark:text-[#727272] font-weight-500 lg:justify-end justify-start">
+                                <li>
+                                    <Link className="me-4 md:me-6" href={"/"}>Home</Link>
+                                </li>
+                                <li>
+                                    <Link className="me-4 md:me-6" href={"/Blog"}>Blog</Link>
+                                </li>
+                                <li>
+                                    <Link className="" href={"/About"}>About</Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr className="my-4  border-[#727272] border-opacity-50 sm:mx-auto lg:my-6" />
+                    <span className="mb-8 block text-sm font-medium text-[#727272] text-center dark:text-[#727272] ">© 2024 WasteSimple. All Rights Reserved.</span>
                 </div>
-                <hr className="my-6  border-white sm:mx-auto lg:my-8" />
-                <span className="block text-sm text-white sm:text-center dark:text-white">© 2024 Grow Store. All Rights Reserved.</span>
-            </div>
-        </footer>
+            </footer>
+        </div>
     )
 }
