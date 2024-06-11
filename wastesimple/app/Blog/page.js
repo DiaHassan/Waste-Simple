@@ -35,16 +35,14 @@ export default async function Blog(){
                     <div className="w-full sm:w-1/2">
                         <img src={sortedBlogs[0].image} alt={sortedBlogs[0].title} className="h-80 object-cover mx-auto"/>
                     </div>
-                    <div className="w-full sm:w-1/2 px-4 flex flex-col justify-between">
+                    <div className="w-full sm:w-1/2 px-4 flex flex-col ">
                         <div className="text-center">
                             <h2 className="text-4xl font-extrabold text-gray-900 sm:tracking-tight">{sortedBlogs[0].title}</h2>
-                            <p className="text-gray-600 mt-2">{sortedBlogs[0].date}</p>
+
                         </div>
-                        {/* <div className="text-left mt-4">
-                            <p className="text-lg text-gray-700">{sortedBlogs[0].text}</p>
-                        </div> */}
-                        <div className="self-end mt-4">
-                            <Link href={`/Blog/${sortedBlogs[0].id}`} className="text-blue-500 hover:underline self-start"> Read More</Link>
+                        <div className="flex flex-row justify-between items-center px-16 pt-[4rem]">
+                            <p className="text-gray-600 mt-1">{sortedBlogs[0].date}</p>
+                            <Link href={`/Blog/${sortedBlogs[0].id}`} className="text-blue-500 hover:underline justify-center items-center  "> Read More</Link>
                         </div>
                     </div>
 

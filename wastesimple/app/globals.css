@@ -106,6 +106,13 @@ background-image: url('./bg.svg')
   background-size: cover;
 }  
 
+.spacelogo {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}  
+
 .layerl {
 background-image: url('./components/footer.svg')
 }
@@ -120,6 +127,9 @@ background-image: url('./About/wp.svg')
   background-image: url('./About/aboutt.svg')
   }
   
+  .layerlogo {
+    background-image: url('./logo.svg')
+    }
 
 .bg-gradient {
   background: radial-gradient(circle at 50% 100%, rgba(153, 255, 151, 1) 17%, rgba(255, 255, 255, 0.75) 60%);

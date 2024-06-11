@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-
+import logo from "./logo.png"
 export default function Navbar(){
     const navigation = [
   
@@ -23,8 +23,8 @@ export default function Navbar(){
               <span className="sr-only">Your Company</span>
               <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
+                src="./logo.png"
+                alt="Logo"
               />
             </a>
           </div>

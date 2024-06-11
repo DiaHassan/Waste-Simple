@@ -23,8 +23,8 @@ const BlogPage = async ({ params: { slug } }) => {
           <h1 className="text-4xl font-bold text-center mb-4">{blog.title}</h1>
           <p className="font-semibold text-lg mb-4">{blog.date}</p>
           <img src={blog.image} alt={blog.title} className="w-full max-w-6xl h-auto mb-8" />
-          <div className="prose text-2xl prose-xl max-w-none mb-8">
-            <p>{formatText(blog.text)}</p>
+          <div className="prose text-2xl prose-xl mt-[3rem] max-w-none mb-8">
+            <p className='text-center'>{formatText(blog.text)}</p>
           </div>
         </div>
       </div>
