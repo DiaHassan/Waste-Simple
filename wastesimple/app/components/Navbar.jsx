@@ -24,7 +24,7 @@ export default function Navbar(){
               <Link className=" " href={"/"}>
                 
                 <img
-                  className="ml-5 h-10 w-auto"
+                  className=" h-10 w-auto"
                   src="https://i.imgur.com/Tb1NJGm.png"
                   alt="Logo"
                 />
@@ -56,11 +56,14 @@ export default function Navbar(){
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
+                <Link className=" " href={"/"}>
+                
                 <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
+                  className=" h-10 w-auto"
+                  src="https://i.imgur.com/Tb1NJGm.png"
+                  alt="Logo"
                 />
+                </Link>
               </a>
               <button
                 type="button"

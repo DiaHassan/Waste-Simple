@@ -3,7 +3,7 @@ import BlogPage from "./[slug]/page"
 import { getBlogs } from "../lib/data";
 
 const Card = ({ image, title, text, link }) => (
-    <div className="bg-[#d7d7d7] min-w-60 max-w-80 rounded-3xl shadow-md shadow-gray-300/50 overflow-hidden w-full sm:w-1/3 m-3 mx-auto">
+    <div className="bg-[#d7d7d7] min-w-60 max-w-80 rounded-3xl shadow-md shadow-gray-300/50 overflow-hidden w-full sm:w-1/3 mt-3 mx-auto">
       <img src={image} alt={title} className="w-full h-36 object-cover mx-auto rounded-3xl" />
       <div className="p-4 flex flex-col h-[40%] justify-between mx-auto">
         <div className="">
@@ -23,7 +23,7 @@ export default async function Blog(){
     const sortedBlogs = blogs.sort((a,b) => new Date(b.date) - new Date(a.date));
     return(
       <div>
-        <section className="h-[75vh] flex  items-center justify-center bg-[#00a258]">
+        <section className=" flex py-16 items-center justify-center bg-[#00a258]">
 
             <div className=" text-center  sm:text-left">
                 <div className="text-center">
@@ -40,7 +40,7 @@ export default async function Blog(){
                             <h2 className="text-4xl font-extrabold text-gray-900 sm:tracking-tight">{sortedBlogs[0].title}</h2>
 
                         </div>
-                        <div className="flex flex-row justify-between items-center px-16 pt-[4rem]">
+                        <div className="flex flex-row justify-between items-center px-8 lg:px-16 pt-[4rem]">
                             <p className="text-gray-600 mt-1">{sortedBlogs[0].date}</p>
                             <Link href={`/Blog/${sortedBlogs[0].id}`} className="text-blue-500 hover:underline justify-center items-center  "> Read More</Link>
                         </div>
