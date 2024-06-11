@@ -16,7 +16,7 @@ export default function Home() {
   
   return (
     <main>
-      <section className="bg-white">
+      <section className="bg-white" >
       
         <div className="bg-white h-screen bg-gradient">
           <header className="absolute inset-x-0 top-0 z-50">
@@ -33,7 +33,7 @@ export default function Home() {
             </div>
             <div className="mx-auto max-w-5xl py-32 sm:py-48 lg:py-50">
               <div className="text-center">
-                <h1 className="text-4xl m-4 font-bold tracking-tight text-gray-900 sm:text-7xl">
+                <h1 className="text-4xl m-4 font-semibold tracking-tight text-gray-900 sm:text-7xl">
                   Latest on the waste technology around the world! 
                 </h1>
                 <div className="mx-auto max-w-lg ">

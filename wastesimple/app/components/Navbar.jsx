@@ -17,16 +17,19 @@ export default function Navbar(){
     return(
 
       <div className="bg-white">
-          <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+          <nav className="flex items-center justify-between p-8 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="./logo.png"
-                alt="Logo"
-              />
-            </a>
+
+              <span className="-m-1.5 p-1.5 sr-only">Your Company</span>
+              <Link className=" " href={"/"}>
+                
+                <img
+                  className="ml-5 h-10 w-auto"
+                  src="https://i.imgur.com/Tb1NJGm.png"
+                  alt="Logo"
+                />
+                </Link>
+
           </div>
           <div className="flex lg:hidden">
             <button
